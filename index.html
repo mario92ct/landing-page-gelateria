@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="~/favicon.ico">
+    <link rel="shortcut icon" href="/favicon.ico">
+     
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <title>Gelateria</title>
+</head>
+<body>
+    
+    <nav id="navbar" class="navbar py-3  position-fixed w-100"> <!--position: fixed;è posizionato rispetto alla visualizzazione, il che significa che rimane sempre nella stessa posizione anche se si scorre la pagina.-->
+        <a href="" class="navbar-brand">   <!--navbar-brand =logo-->
+            <img id="navbarBrand" src="./loghi/logogelaterianera2.jpg" width="150"   alt="">
+        </a>
+        <div>
+            <a id="navbarCTAScroll" href="" class="btn px-4 rounded-pill text-uppercase text-white bg-yellow shadow font-weight-bold d-none">prenota</a>  <!--scroll navbar in js rounded-pill =pulsante prenota tondo rettangolare   SHADOW=effetto ombra -->
+            
+            
+        </div>
+    </nav>  
+    
+    <header class="header">
+        <div class="container h-100"> <!--occupa il 100% dello spazio del container il container puo essere larghezza fissa(container) e larghezza fluida(container-fluid)-->
+            <div class="row h-100 align-items-center">  <!--row è una riga  alingnitemscenter per il contenitore flessibile-->
+                <div class="col-12 col-md-6 text-white text-shadow">
+                    <p class="lead font-italic mt-5 mt-md-3 ">voglia di gelato?</p> <!-- la classe lead mette in risalto un paragrafo   font-italic=font di testo-->
+                    <h1 class="display-4 my-5">Gelateria dal 2021</h1>
+                    <p class="lead">il miglior gelato artigianale di tutta la sicilia ,usiamo prodotti a km 0 che rendono i sapori unici ed inimitabili</p>
+                </div>
+                <div class="col-12 text-center text-lg-right">
+                    <a id="headerCTA" class="btn btn-lg text-white bg-yellow rounded-pill px-3 shadow text-uppercase px-3"href="#form">prenota adesso</a>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#e7008a" fill-opacity="1" d="M0,128L8.9,117.3C17.8,107,36,85,53,85.3C71.1,85,89,107,107,117.3C124.4,128,142,128,160,149.3C177.8,171,196,213,213,213.3C231.1,213,249,171,267,144C284.4,117,302,107,320,96C337.8,85,356,75,373,69.3C391.1,64,409,64,427,74.7C444.4,85,462,107,480,117.3C497.8,128,516,128,533,138.7C551.1,149,569,171,587,176C604.4,181,622,171,640,176C657.8,181,676,203,693,192C711.1,181,729,139,747,112C764.4,85,782,75,800,112C817.8,149,836,235,853,234.7C871.1,235,889,149,907,112C924.4,75,942,85,960,85.3C977.8,85,996,75,1013,64C1031.1,53,1049,43,1067,42.7C1084.4,43,1102,53,1120,90.7C1137.8,128,1156,192,1173,192C1191.1,192,1209,128,1227,122.7C1244.4,117,1262,171,1280,208C1297.8,245,1316,267,1333,240C1351.1,213,1369,139,1387,133.3C1404.4,128,1422,192,1431,224L1440,256L1440,0L1431.1,0C1422.2,0,1404,0,1387,0C1368.9,0,1351,0,1333,0C1315.6,0,1298,0,1280,0C1262.2,0,1244,0,1227,0C1208.9,0,1191,0,1173,0C1155.6,0,1138,0,1120,0C1102.2,0,1084,0,1067,0C1048.9,0,1031,0,1013,0C995.6,0,978,0,960,0C942.2,0,924,0,907,0C888.9,0,871,0,853,0C835.6,0,818,0,800,0C782.2,0,764,0,747,0C728.9,0,711,0,693,0C675.6,0,658,0,640,0C622.2,0,604,0,587,0C568.9,0,551,0,533,0C515.6,0,498,0,480,0C462.2,0,444,0,427,0C408.9,0,391,0,373,0C355.6,0,338,0,320,0C302.2,0,284,0,267,0C248.9,0,231,0,213,0C195.6,0,178,0,160,0C142.2,0,124,0,107,0C88.9,0,71,0,53,0C35.6,0,18,0,9,0L0,0Z"></path>
+      </svg> -->
+
+      <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: rgb(196, 43, 43) ;"></path></svg></div>
+    
+    <div class="container my-5 py5">
+        <div class="row">
+            <div class="col-12 col-md-8">
+                <h2>il gelato per chi non si accontenta</h2>
+                <p class="lead text-secondary">
+                    rendiamo il tuo gelato unico non solo nel sapore ma anche nei vari formati ,puoi metterlo nelle croccanti e squisite crepes, nella crepecake ,nei cannoli siciliani e tanti altri modi ancora  
+                </p>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-12 col-md-4 col-lg-4 mb-3">
+                <div class="over-box">
+                    <p class="lead text-secondary text-center bg-white w-100 over-text font-weight-bold">mix banana perfetto </p>
+                    <img src="./loghi/gelatobanana.jpg" alt="" class="img-fluid over-img mt-5" height="100%" width="100%">
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+                <div class="over-box">
+                    <p class="lead text-secondary text-center bg-white w-100 over-text font-weight-bold">cake con gelato all interno</p>
+                    <img src="./loghi/gelatocake.jpg" alt="" class="img-fluid over-img mt-5">
+                </div> 
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+                <div class="over-box">
+                    <p class="lead text-secondary text-center bg-white w-100 over-text font-weight-bold">waffel ai frutti di bosco</p>
+                    <img src="./loghi/gelatofrutti.jpg" alt="" class="img-fluid over-img mt-5">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid my-5 py-5 bg-section-cta">
+        <div class="row h-100 justify-content-center align-items-center">
+            <div class="col-8 text-center text-white text-shadow">
+                <p class="h1">ordina il gelato piu buono che ci sia</p>
+            </div>
+            <div class="col-12 text-center">
+                <a href="#form" class="btn px-4 btn-lg rounded-pill text-uppercase bg-yellow shadow text-white">prenota</a>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="container my-5 py-5">
+        <div class="row">
+            <div class="col-12 col-md-8">
+                <h2>i nostri gusti di gelato</h2>
+                <p class="lead text-secondary">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id excepturi et mollitia, quam maiores ducimus numquam repudiandae incidunt ut architecto cupiditate beatae dolore quis commodi perferendis! Fugit laborum illo atque?
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 col-lg-3 mb-2">
+               <div class="over-box">
+                <div class="product-label text-uppercase font-weight-bold ">pistacchio</div>
+                <div class="wrapper"></div>
+                <img src="/loghi/icecream-5046699_1280.jpg" class="img-fluid over-img  "alt="">
+               </div>
+            </div>
+            <div class="col-6 col-lg-3 mb-2">
+                <div class="over-box">
+                 <div class="product-label text-uppercase font-weight-bold ">fiordilatte</div>
+                 <div class="wrapper"></div>
+                 <img src="./loghi/ice-cream2.jpg" class="img-fluid over-img  "alt="">
+                </div>
+             </div>
+           
+             <div class="col-6 col-lg-3 mb-2">
+                <div class="over-box">
+                 <div class="product-label text-uppercase font-weight-bold  ">cioccolato</div>
+                 <div class="wrapper"></div>
+                 <img src="/loghi/ice-cream-5452794_1280.jpg" class="img-fluid over-img  "alt="">
+                </div>
+             </div>
+             <div class="col-6 col-lg-3 mb-2">
+                <div class="over-box">
+                 <div class="product-label text-uppercase font-weight-bold ">nocciola</div>
+                 <div class="wrapper"></div>
+                 <img src="./loghi/chocolate-ice-cream-2755456_1280.jpg" class="img-fluid over-img  "alt="" height="200px">
+                </div>
+             </div>
+             <div class="col-6 col-lg-3 mb-2">
+                <div class="over-box">
+                 <div class="product-label text-uppercase font-weight-bold ">fragola</div>
+                 <div class="wrapper"></div>
+                 <img src="https://cdn.pixabay.com/photo/2015/05/25/14/29/strawberries-783351_960_720.jpg" class="img-fluid over-img mb-3 "alt="" >
+                </div>
+             </div>
+             <div class="col-6 col-lg-3 mb-2">
+                <div class="over-box">
+                 <div class="product-label text-uppercase font-weight-bold ">limone</div>
+                 <div class="wrapper"></div>
+                 <img src="./loghi/ice-cream3.jpg" class="img-fluid over-img  "alt="">
+                </div>
+             </div>
+             <div class="col-6 col-lg-3 mb-2">
+                <div class="over-box">
+                 <div class="product-label text-uppercase font-weight-bold ">amarena</div>
+                 <div class="wrapper"></div>
+                 <img src="/loghi/ice-cream-3677914_1280.jpg" class="img-fluid over-img  "alt="">
+                </div>
+             </div>
+             <div class="col-6 col-lg-3 mb-2">
+                <div class="over-box">
+                 <div class="product-label text-uppercase font-weight-bold h6 ">stracciatella</div>
+                 <div class="wrapper"></div>
+                 <img src="./loghi/ice-cream4.jpg" class="img-fluid over-img  "alt="">
+                </div>
+             </div>
+        </div>
+    </div>
+    
+
+    
+    <div class="container-fluid my-5 py-5 bg-section-cta-2">
+        <div class="row h-100 justify-content-center align-items-center">
+            <div class="col-8 text-center text-white text-shadow">
+                <p class="h1 display-4 text-shadow">Non solo gelati</p>
+            </div>
+            <div class="col-12 text-center">
+                <a href="#form" class="btn px-4 btn-lg rounded-pill text-uppercase bg-yellow shadow text-white">prenota</a>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <div class="container my-5 py-5">
+        <div class="row">
+            <div class="col-12 col-md-8">
+                <h2>I NOSTRI FEEDBACK</h2>
+                <p class="lead text-secondary">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id excepturi et mollitia, quam maiores ducimus numquam repudiandae incidunt ut architecto cupiditate beatae dolore quis commodi perferendis! Fugit laborum illo atque?
+                </p>
+            </div>
+        </div>
+      <div class="row mt-5">
+          <div class="col-6 col-lg-3 mb-3">
+              <div class="shadow p-2">
+                  <img src="./loghi/RECENZIONE1.png"class="img-fluid " alt="">
+              </div>
+          </div>
+          <div class="col-6 col-lg-3 mb-3">
+              <div class="shadow p-2">
+                  <img src="./loghi/RECENZIONE2.png"class="img-fluid" alt="">
+              </div>
+          </div>
+          <div class="col-6 col-lg-3 mb-3">
+              <div class="shadow p-2">
+                  <img src="./loghi/RECENZIONE3.png"class="img-fluid" alt="">
+              </div>
+          </div>
+          <div class="col-6 col-lg-3 mb-3">
+              <div class="shadow p-2">
+                  <img src="./loghi/RECENZIONE1.png"class="img-fluid" alt="">
+              </div>
+          </div>
+          <div class="col-6 col-lg-3 mb-3">
+              <div class="shadow p-2">
+                  <img src="./loghi/RECENZIONE1.png"class="img-fluid" alt="">
+              </div>
+          </div>
+          <div class="col-6 col-lg-3 mb-3">
+              <div class="shadow p-2">
+                  <img src="./loghi/RECENZIONE1.png"class="img-fluid" alt="">
+              </div>
+          </div>
+          <div class="col-6 col-lg-3 mb-3">
+              <div class="shadow p-2">
+                  <img src="./loghi/RECENZIONE1.png"class="img-fluid" alt="">
+              </div>
+          </div>
+          <div class="col-6 col-lg-3 mb-3">
+              <div class="shadow p-2">
+                  <img src="./loghi/RECENZIONE1.png"class="img-fluid" alt="">
+              </div>
+          </div>
+      </div>
+    </div>
+
+
+
+
+
+
+     <div class="container my-5 py-5 d-none">
+        <div class="row justify-content-between px-3 flex-nowrap" style="overflow-x: scroll;">  nowrap specifica che gli elementi flessibili non verranno posti a capo   overflow-x scroll aggiunge lo scroll nell asse x (orizzonate)
+
+            <div class="p-3 m-3 flex-shrink-0 w-200">  .flex-shrink-1su un oggetto flessibile per ridurlo se necessario.
+                <p class="lead mb-0">Nome Cognome</p>
+                <p class="small font-italic">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, beatae quis inventore accusantium dolorum culpa nihil adipisci quas non ipsum laudantium quidem ut, esse aut excepturi enim, reprehenderit ea! Eligendi.
+                </p>
+                <a href="" class="feedback-link">f</a>
+            </div>
+            <div class="p-3 m-3 flex-shrink-0 w-200">
+                <p class="lead mb-0">Nome Cognome</p>
+                <p class="small font-italic">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, beatae quis inventore accusantium dolorum culpa nihil adipisci quas non ipsum laudantium quidem ut, esse aut excepturi enim, reprehenderit ea! Eligendi.
+                </p>
+                <a href="" class="feedback-link">f</a>
+            </div>
+            <div class="p-3 m-3 flex-shrink-0 w-200">
+                <p class="lead mb-0">Nome Cognome</p>
+                <p class="small font-italic">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, beatae quis inventore accusantium dolorum culpa nihil adipisci quas non ipsum laudantium quidem ut, esse aut excepturi enim, reprehenderit ea! Eligendi.
+                </p>
+                <a href="" class="feedback-link">f</a>
+            </div>
+            <div class="p-3 m-3 flex-shrink-0 w-200">
+                <p class="lead mb-0">Nome Cognome</p>
+                <p class="small font-italic">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, beatae quis inventore accusantium dolorum culpa nihil adipisci quas non ipsum laudantium quidem ut, esse aut excepturi enim, reprehenderit ea! Eligendi.
+                </p>
+                <a href="" class="feedback-link">f</a>
+            </div>
+            <div class="p-3 m-3 flex-shrink-0 w-200">
+                <p class="lead mb-0">Nome Cognome</p>
+                <p class="small font-italic">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, beatae quis inventore accusantium dolorum culpa nihil adipisci quas non ipsum laudantium quidem ut, esse aut excepturi enim, reprehenderit ea! Eligendi.
+                </p>
+                <a href="" class="feedback-link">f</a>
+            </div>
+            <div class="p-3 m-3 flex-shrink-0 w-200">
+                <p class="lead mb-0">Nome Cognome</p>
+                <p class="small font-italic">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, beatae quis inventore accusantium dolorum culpa nihil adipisci quas non ipsum laudantium quidem ut, esse aut excepturi enim, reprehenderit ea! Eligendi.
+                </p>
+                <a href="" class="feedback-link">f</a>
+            </div>
+            <div class="p-3 m-3 flex-shrink-0 w-200">
+                <p class="lead mb-0">Nome Cognome</p>
+                <p class="small font-italic">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, beatae quis inventore accusantium dolorum culpa nihil adipisci quas non ipsum laudantium quidem ut, esse aut excepturi enim, reprehenderit ea! Eligendi.
+                </p>
+                <a href="" class="feedback-link">f</a>
+            </div>
+            <div class="p-3 m-3 flex-shrink-0 w-200">
+                <p class="lead mb-0">Nome Cognome</p>
+                <p class="small font-italic">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, beatae quis inventore accusantium dolorum culpa nihil adipisci quas non ipsum laudantium quidem ut, esse aut excepturi enim, reprehenderit ea! Eligendi.
+                </p>
+                <a href="" class="feedback-link">f</a>
+            </div>
+            <div class="p-3 m-3 flex-shrink-0 w-200">
+                <p class="lead mb-0">Nome Cognome</p>
+                <p class="small font-italic">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, beatae quis inventore accusantium dolorum culpa nihil adipisci quas non ipsum laudantium quidem ut, esse aut excepturi enim, reprehenderit ea! Eligendi.
+                </p>
+                <a href="" class="feedback-link">f</a>
+            </div>
+            <div class="p-3 m-3 flex-shrink-0 w-200">
+                <p class="lead mb-0">Nome Cognome</p>
+                <p class="small font-italic">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, beatae quis inventore accusantium dolorum culpa nihil adipisci quas non ipsum laudantium quidem ut, esse aut excepturi enim, reprehenderit ea! Eligendi.
+                </p>
+                <a href="" class="feedback-link">f</a>
+            </div>
+
+
+        </div>
+    </div> -->
+
+    
+    
+    <div class="container-fluid my-5 py-5 bg-section-timer">
+        <div class="row h-100 justify-content-center align-items-center">
+            <div class="col-12 text-center text-accent-color text-shadow">
+                <p class="h1 display-5">gli sconti terminano<br>tra</p>
+            </div>
+            <div class="col-6 col-md-2 text-center  text-accent-color text-shadow">
+                <p id="giorniMancanti" class="h1"></p>
+                <p class="lead "> giorni</p>
+            </div>
+            <div class="col-6 col-md-2 text-center  text-accent-color text-shadow">
+                <p id="oreMancanti" class="h1"></p>
+                <p class="lead">ore</p>
+            </div>
+            <div class="col-6 col-md-2 text-center  text-accent-color text-shadow">
+                <p id="minutiMancanti" class="h1"></p>
+                <p class="lead">minuti</p>
+            </div>
+            <div class="col-6 col-md-2 text-center  text-accent-color text-shadow">
+                <p id="secondiMancanti" class="h1"></p>
+                <p class="lead">secondi</p>
+            </div>
+        
+            <div class="col-12 text-center">
+                <a href="#form" class="btn px-4 btn-lg rounded-pill text-uppercase bg-yellow shadow text-white">prenota</a>
+            </div>
+        </div>
+        
+    </div>
+
+    
+
+    <div class="container my-5 py-5">
+        <div class="row">
+            <img src="./loghi/logo gelateria3.jpg" class=" mx-auto h-100 mb-5 margin-auto" alt="" width="400px">
+            <div class="col-12 col-md-6">
+                <p class="lead text-secondary">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum exercitationem ipsa velit aliquam provident accusamus, eveniet minima vero modi distinctio, eos odit dolor quia consectetur, error sunt esse sint neque?
+                </p>
+            </div>
+            <div class="col-12 col-md-6">
+                
+                <form id="form" class="card p-5 border-0 shadow">
+                    <p class="h2 mb-5 text-uppercase text-shadow display-5">scrivici</p>
+                    <div class="form-group mb-4">
+                        <label for="name" class="mb-0 text-secondary">nome</label>
+                        <input type="text" class="form-control border-bottom-yellow" id="name" placeholder="mario rossi">
+                    </div>
+                   
+                    
+                    <div class="form-group mb-4">
+                        <label for="mail" class="mb-0 text-secondary">il tuo indirizzo email</label>
+                        <input type="email" class="form-control border-bottom-yellow" id="name" placeholder="mario.rossi@gmail.com">
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="tel" class="mb-0 text-secondary">il tuo numero di telefono</label>
+                        <input type="tel" class="form-control border-bottom-yellow" id="name" placeholder="334780347347">
+                    </div>
+                    <div class="custom-control custom-checkbox mb-4">
+                        <input id="privacy" type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label text-secondary font-italic" for="privacy">accetto termini e condizioni</label>
+                      </div>
+                    
+                    <button type="submit" class="btn py-3 rounded-pill text-uppercase bg-yellow text-white text-shadow">prenota adesso</button>
+                </form>
+            </div>
+        </div>
+    </div>
+   
+    
+
+    <footer class="container-fluid py-5 bg-footer">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-6 align-items-center text-center footer-custom">
+                <img src="./loghi/logogelaterianera2.jpg" class="w-50" alt="">
+                <hr class="hr">
+                <p class="m-0">
+                    Via Catania, 13
+                </p>
+               
+                <p class="m-0">
+                    2210 Catania, Ct
+                </p>
+                <p class="m-0">
+                    P.IVA 2212914
+                </p>
+                <p class="mt-4">
+                    gelateriacatania@live.it
+                </p>
+               
+             
+
+            </div>
+           <!-- <ul>
+               <li> <a href="" class="text-decoration-none text-white"><i class="fa fa-instagram mr-3 fa-2x "> </i></a>
+      
+                <a href="" class="text-decoration-none text-ascent-color"><i class="fa fa-twitter  mr-3 fa-2x"> </i></a>
+                
+                <a href="" class="text-decoration-none text-white"><i class="fa fa-google-plus  mr-3 fa-2x"> </i></a>
+                
+                <a href="" class="text-decoration-none text-white"><i class="fa fa-linkedin mr-3 fa-2x"> </i></a>
+                
+                <a href="" class="text-decoration-none text-white"> <i class="fa fa-dribbble  mr-3 fa-2x"> </i></a></li>
+           </ul> -->
+        </div>
+    </footer>
+    
+    
+  
+    <script src="scripts.js"></script>
+    <script src="https://use.fontawesome.com/74d0951052.js"></script>
+</body>
+</html>

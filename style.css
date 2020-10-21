@@ -1,0 +1,238 @@
+h1,h2,h3,.h1,.h2::placeholder {        /*placeholder è la compilazione della sezione del form*/ 
+  font-family: 'Oswald', sans-serif;
+  
+}
+
+* {
+  font-family: 'Lobster', cursive;
+}
+
+.bg-yellow {
+  background-color: rgb(250, 200,70); 
+}
+
+#navbar {
+  z-index: 9999;  /*z-index, la proprietà CSS che aiuta a controllare il layout fornendo un terzo asse per organizzare il contenuto.*/
+  transition: 1s;
+}
+
+.header {
+  height: 100vh;
+  min-height: 500px;
+  background: url('./loghi/sfondogelateria.jpg');
+  opacity: 1;
+  background-size: cover; /*
+  Ridimensiona l'immagine di sfondo per coprire l'intero contenitore, anche se deve allungare l'immagine o tagliare leggermente uno dei bordi */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 5px rgba(0,0,0,1); /*diamo dell effetto ombra al testo su i vari lati selezionati */
+}
+
+.over-box {
+  position: relative; /* 
+  L'elemento è posizionato rispetto alla sua posizione normale, quindi "left: 20px" aggiunge 20 pixel alla posizione LEFT dell'elemento*/
+  overflow: hidden; /*
+  L'overflow viene tagliato e il resto del contenuto sarà invisibile*/
+  transition: 1s;
+}
+
+.over-img {
+  transition:1s;
+}
+
+.over-box:hover .over-img {
+  transform: scale(1.1);  /* al passaggio l immagine si trasforma e si ingrandisce ,effetto zoom*/
+}
+
+.over-text {
+  position: absolute; /* Il posizionamento assoluto (position: absolute;) avviene sempre rispetto al box contenitore dell’elemento.*/
+  padding: 20px 40px; /* Le paddingproprietà CSS vengono utilizzate per generare spazio attorno al contenuto di un elemento, all'interno di qualsiasi bordo definito.*/
+  transition: 1s;
+  z-index: 1;
+
+
+}
+
+.over-box::after {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  content:""; /*La contentproprietà viene utilizzata con gli pseudo-elementi :: before e :: after , per inserire il contenuto generato. */
+  transition: 1s;
+  opacity: 0;
+  background-color: rgba(225, 255,255,0.2);
+
+}
+
+.over-box:hover::after {
+  opacity: 1;
+
+}
+
+
+.bg-section-cta {
+  height: 400px;
+  background:linear-gradient(white,transparent,white), url('/loghi/gelateriasfondo2.jpg');
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+.bg-section-cta-2 {
+  height: 650px;
+  background:linear-gradient(white,transparent,white),url('/loghi/dessert-615806_1920.jpg');
+  background-size: cover;
+  background-position: center;
+
+}
+/* 
+@media only screen and (max-width: 576px) {
+  .bg-section-cta {
+    background-position: right;
+  }
+} */
+
+
+.product-label {
+  position: relative;
+  top: 40px;
+  left: 0px;
+  padding-left: 10px;
+  width: 120px;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  z-index: 99;
+  background-color: #d0ecf0;
+  opacity: 0.8;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.wrapper.img-fluid {
+  transition: 0.8s;
+}
+
+.wrapper.img-fluid:hover {
+  transform: scale(1.1);
+}
+
+.w-200 {
+  width: 200px;
+}
+
+.feedback-link {
+  width: 30px;
+  height: 30px;
+  background-color: blue;
+  text-decoration: none !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white !important;
+}
+
+
+.bg-section-timer {
+  height: 400px;
+  background: linear-gradient(white,transparent,white), url('loghi/gelateriasfondo3.jpg') ; opacity: 0.9;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.border-bottom-yellow {
+  border:none !important ;
+  border-radius: 0px;
+  border-bottom: 4px solid rgb(250, 200,70) !important;
+
+}
+
+.bg-footer {
+  background-color: #d0ecf0;
+  align-items: center;
+}
+
+.hr {
+  width: 120px;
+  height: 2px;
+  background-color: darkgreen;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.custom-control-label::after {
+  position: absolute;
+  top: .25rem;
+  left: -1.5rem;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  content: "";
+  background: no-repeat 50%/50% 50%;
+  background-color: darkorange !important; 
+}
+
+
+
+:root{
+  --secondary-color:#03045e;
+  --main-color :#caf0f8;
+  --accent-color:#b51616;
+}
+
+.bg-main-color {
+  background-color:var(--main-color);
+}
+
+.bg-secondary-color {
+  background-color:var(--secondary-color);
+}
+
+.bg-accent-color {
+  background-color:var(--accent-color);
+}
+
+
+
+.text-main-color {
+  color:var(--main-color);
+}
+
+.text-secondary-color {
+  color:var(--secondary-color);
+}
+
+.text-accent-color {
+  color:var(--accent-color);
+}
+
+/* .navbar-nav .nav-item .nav-link {
+  color: red;
+}
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+  color:var(--accent-color);
+} */
+
+
+/* .h1 {
+  -webkit-filter ;
+} */
+
+.footer-custom {
+  
+  margin: auto;
+  
+  
+}
